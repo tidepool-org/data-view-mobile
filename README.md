@@ -3,14 +3,6 @@
 This is the repo for the Tidepool Data View React Native application for the Grace Hopper Celebration Open Source Day.
 
 
-## Table of Contents
-[About Tidepool](#About-Tidepool)
-
-[Project Description](#Project-Description)
-
-[Setup](#Setup)
-
-
 ## About Tidepool
 
 Tidepool is a nonprofit organization whose mission is to make diabetes data more accessible, meaningful, and actionable for people with diabetes, their care teams, and researchers.
@@ -40,3 +32,5 @@ Bonus Skills: React, React-Native, Product Development, UI/UX
 ## Setup
 
 In preparation to contribute to this project you will need to have the react native development environment setup on your computer. We recommend using the setup documentation on the react-native site found [here](https://facebook.github.io/react-native/docs/getting-started). We will be using Expo tools, so make sure that you can create and run a react native application following the Expo CLI Quickstart instructions.
+
+If you are setting up your development environment on a Mac for the first time you can check out this repo for some guidance on basic local dev environment setup [here](https://github.com/thacherT1D/macosx-dev-setup)
