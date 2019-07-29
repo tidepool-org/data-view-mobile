@@ -33,4 +33,4 @@ Bonus Skills: React, React-Native, Product Development, UI/UX
 
 In preparation to contribute to this project you will need to have the react native development environment setup on your computer. We recommend using the setup documentation on the react-native site found [here](https://facebook.github.io/react-native/docs/getting-started). We will be using Expo tools, so make sure that you can create and run a react native application following the Expo CLI Quickstart instructions.
 
-If you are setting up your development environment on a Mac for the first time you can check out this repo for some guidance on basic local dev environment setup [here](https://github.com/thacherT1D/macosx-dev-setup)
+If you are setting up your development environment on a Mac for the first time you can check out this repo for some guidance on basic local dev environment setup [here](https://github.com/thacherT1D/macosx-dev-setup).

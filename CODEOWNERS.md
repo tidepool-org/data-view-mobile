@@ -1,20 +1,16 @@
 # Code Owners
 
 
-**Thacher Hussain**
+##### Thacher Hussain
 
-Github: @thacherT1D
-
-Twitter: @thacherT1D
-
-Email: thacher@tidepool.org
+- **Github:** [@thacherT1D](https://github.com/thacherT1D)
+- **Twitter:** [@thacherT1D](https://twitter.com/thacherT1D)
+- **Email:** [thacher@tidepool.org](mailto:thacher@tidepool.org)
 
 
-**Amanda Fisher**
-
-Github: @theshecoder
-
-Email: amanda@tidepool.org
+##### Amanda Fisher
+- **Github:** [@theshecoder](https://github.com/theshecoder)
+- **Email:** [amanda@tidepool.org](mailto:amanda@tidepool.org)
 
 
 ### Stay in touch
