@@ -1,6 +1,9 @@
 # Code Owners
 
 
+When submitting a pull request be sure to tag one or both of us as a reviewer.
+
+
 ##### Thacher Hussain
 
 - **Github:** [@thacherT1D](https://github.com/thacherT1D)
