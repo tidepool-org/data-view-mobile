@@ -31,8 +31,6 @@ Bonus Skills: React, React-Native, Product Development, UI/UX
 
 ## Setup
 
-**Local Environment Setup.** If you are setting up your development environment on a Mac for the first time you can check out this repo for some guidance on basic local dev environment setup [here](https://github.com/thacherT1D/macosx-dev-setup).
-
 **React Native Setup.** In preparation to contribute to this project you will need to have the react native development environment setup on your computer. We recommend using the setup documentation on the react-native site found [here](https://facebook.github.io/react-native/docs/getting-started). We will be using Expo tools, so make sure that you can create and run a react native application following the Expo CLI Quickstart instructions all the way through to seeing the app on either the iOS or Android simulator. We highly recommend using the iOS simulator unless you are not using a Mac, in our experience the Android simulator tends to run into more configuration errors.
 
 **Project Setup.** Clone this repo and get it running on your local machine using the directions below.
