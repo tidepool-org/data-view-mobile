@@ -49,3 +49,8 @@ From the directory you would like to place the project repo in...
 At this point the react native project will be running and you should see the chrome development tools. In the left hand sidebar you will see options to run the app on the emulator of your choice.
 
 For troubleshooting with Expo, see the documentation [here](https://docs.expo.io/versions/latest/)
+
+
+## How to Contribute to Tidepool Projects
+
+Find the specific contribution doc [here](https://github.com/tidepool-org/data-view-mobile/blob/master/CONTRIBUTING.md)
