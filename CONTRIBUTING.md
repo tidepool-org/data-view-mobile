@@ -7,14 +7,12 @@ Developers contibuting to this repo will use the GitHub flow development process
 
 For feature development during GHC OSD we will use [GitHub flow](https://guides.github.com/introduction/flow/). If you are not familiar with GitHub flow, please take a few minutes to read that document. This is not to be confused with git-flow which is significantly different. If you are interested in understanding the differences between the two you can checkout [this article](https://githubflow.github.io). 
 
-As explained by Github (in [this article](https://githubflow.github.io), in short this means our development process will look like this: 
-- Anything in the master branch is deployable
-- To work on something new, create a descriptively named branch off of master (ie: new-oauth2-scopes)
+The development process as an outside contributor is explained well [here](https://akrabat.com/the-beginners-guide-to-contributing-to-a-github-project/) and will look roughly like this: 
+- Fork and Clone the repo you want to contribute to and pull the develop branch  
+- Create a descriptively named branch off of develop
 - Commit to that branch locally and regularly push your work to the same named branch on the server
-- When you need feedback or help, or you think the branch is ready for merging, open a pull request
-- After someone else has reviewed and signed off on the feature, you can merge it into master
-- Once it is merged and pushed to 'master', you can and should deploy immediately
-
+- When you think the branch is ready for merging, open a pull request
+- After someone else has reviewed and signed off on the feature, it will be merged into the develop branch where it will be ready for the next release
 
 
 ## Feature Request Protocol
