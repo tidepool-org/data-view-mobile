@@ -29,15 +29,31 @@ Helpful Skills: Git, Node/NPM, Javascript
 Bonus Skills: React, React-Native, Product Development, UI/UX
 
 
+## Expectations for GHC OSD
+
+We are so excited to be participating in the Grace Hopper Celebration Open Source Day! We want everyone to get the most out of their participation -- to be setup for success we ask that each participant come prepared having completed the following steps: 
+
+- Carefully review this README.md and [CONTRIBUTING.md](https://github.com/tidepool-org/data-view-mobile/blob/master/CONTRIBUTING.md)
+- Complete Dev Environment Setup (as outlined below)
+- [PRODUCT TASKS]
+
+
 ## Setup
 
-**React Native Setup.** In preparation to contribute to this project you will need to have the react native development environment setup on your computer. We recommend using the setup documentation on the react-native site found [here](https://facebook.github.io/react-native/docs/getting-started). We will be using Expo tools, so make sure that you can create and run a react native application following the Expo CLI Quickstart instructions all the way through to seeing the app on either the iOS or Android simulator. We highly recommend using the iOS simulator unless you are not using a Mac, in our experience the Android simulator tends to run into more configuration errors.
+**Github Setup.** Make sure that you have your GitHub account setup and that you are comfortable with [Git Basics](https://git-scm.com/book/en/v1/Git-Basics). You should feel comfortable fork and cloning a repo, making code changes, and pushing those code changes back to the repo. Beyond the basics, it is important to understand how to contribute to a project using the GitHub Flow, which is outlined further in [CONTRIBUTING.md](https://github.com/tidepool-org/data-view-mobile/blob/master/CONTRIBUTING.md)
 
-**Project Setup.** Clone this repo and get it running on your local machine using the directions below.
+
+**React Native Setup.** In preparation to contribute to this project you will need to have the react native development environment setup on your computer. We recommend using the setup documentation on the react-native site found [here](https://facebook.github.io/react-native/docs/getting-started). We will be using Expo tools, so make sure that you can create and run a react native application following the Expo CLI Quickstart instructions all the way through to seeing the app on either an iOS or Android device. 
+
+If you feel comfortable going through the setup for iOS simulator on Mac OS, we highly recommend it, as it is a faster workflow compared to refreshing a physical device. This is not required, just a nice to have.
+
+For local (on computer) simulators we highly recommend using the iOS simulator unless you are not using a Mac, in our experience the Android simulator tends to run into more configuration errors and we will not have time to troubleshoot environment errors for individual participants.
+
+**Project Setup.** Fork and clone this repo and get it running on your local machine using the directions below.
 
 From the directory you would like to place the project repo in...
 
-```https://github.com/tidepool-org/data-view-mobile.git```
+```git clone [YOUR FORKED REPO LINK HERE]```
 
 ```cd data-view-mobile```
 
@@ -46,11 +62,13 @@ From the directory you would like to place the project repo in...
 ```yarn start```
 
 
-At this point the react native project will be running and you should see the chrome development tools. In the left hand sidebar you will see options to run the app on the emulator of your choice.
+At this point the react native project will be running and you should see the chrome development tools. In the left hand sidebar you will see options to open the app in Expo on a physical device, or to run the app on the emulator of your choice (if you setup a local iOS or android emulator).
 
 For troubleshooting with Expo, see the documentation [here](https://docs.expo.io/versions/latest/)
 
 
-## How to Contribute to Tidepool Projects
+## How to Contribute to this Repo
 
-Find the specific contribution doc [here](https://github.com/tidepool-org/data-view-mobile/blob/master/CONTRIBUTING.md)
+You can contribute to this repo by submitting PRs, reporting bugs, or submitting feature requests.
+
+Find the specific documentation for contributing [here](https://github.com/tidepool-org/data-view-mobile/blob/master/CONTRIBUTING.md)
