@@ -1,27 +1,67 @@
+import * as WebBrowser from "expo-web-browser";
 import React from 'react';
-import { ScrollView, StyleSheet } from 'react-native';
-import { ExpoLinksView } from '@expo/samples';
+import { StyleSheet, View, Alert } from 'react-native';
 
-export default function LinksScreen() {
-  return (
-    <ScrollView style={styles.container}>
-      {/**
-       * Go ahead and delete ExpoLinksView and replace it with your content;
-       * we just wanted to provide you with some helpful links.
-       */}
-      <ExpoLinksView />
-    </ScrollView>
-  );
+import {
+  Container,
+  Header,
+  Body,
+  Title,
+  Left,
+  Right,
+  Content,
+  Text,
+  Button,
+} from "native-base";
+
+export default class LinksScreen extends React.Component {
+
+  render() {
+    return (
+      <Container>
+        <Header>
+          <Left />
+          <Body>
+            <Title>Data</Title>
+          </Body>
+          <Right />
+        </Header>
+
+        <Content padder>
+          <Button
+            block
+            onPress={tidepoolLearnMorePress}
+            style={[styles.button]}
+          >
+            <Text>Learn More About Tidepool</Text>
+          </Button>
+          <Button
+            success
+            block
+            onPress={() => this.props.navigation.navigate("HomeStack")}
+            style={[styles.button]}
+          >
+            <Text>Home</Text>
+          </Button>
+        </Content>
+      </Container>
+    );
+    
+  }
 }
 
 LinksScreen.navigationOptions = {
-  title: 'Links',
+  header: null,
 };
 
+function tidepoolLearnMorePress() {
+  WebBrowser.openBrowserAsync(
+    'https://tidepool.org/'
+  );
+}
+
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    paddingTop: 15,
-    backgroundColor: '#fff',
+  button: {
+    marginTop: 10,
   },
 });
