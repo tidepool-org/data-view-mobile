@@ -14,7 +14,7 @@ import {
   Button,
 } from "native-base";
 
-export default class LinksScreen extends React.Component {
+export default class DataScreen extends React.Component {
 
   render() {
     return (
@@ -50,7 +50,7 @@ export default class LinksScreen extends React.Component {
   }
 }
 
-LinksScreen.navigationOptions = {
+DataScreen.navigationOptions = {
   header: null,
 };
 

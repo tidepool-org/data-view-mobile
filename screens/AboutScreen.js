@@ -14,7 +14,7 @@ import {
   Button,
 } from "native-base";
 
-export default class SettingsScreen extends React.Component {
+export default class AboutScreen extends React.Component {
   
   render() {
     return (
@@ -34,17 +34,17 @@ export default class SettingsScreen extends React.Component {
         <Button
           success
           block
-          onPress={() => this.props.navigation.navigate("LinksStack")}
+          onPress={() => this.props.navigation.navigate("DataStack")}
           style={[styles.button]}
         >
-          <Text>Links</Text>
+          <Text>Data</Text>
         </Button>
       </Content>
     </Container>
     );
   }
 }
-SettingsScreen.navigationOptions = {
+AboutScreen.navigationOptions = {
   header: null,
 };
 

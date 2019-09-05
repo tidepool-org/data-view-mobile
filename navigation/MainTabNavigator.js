@@ -4,8 +4,8 @@ import { createStackNavigator, createBottomTabNavigator } from 'react-navigation
 
 import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
-import LinksScreen from '../screens/LinksScreen';
-import SettingsScreen from '../screens/SettingsScreen';
+import DataScreen from '../screens/DataScreen';
+import AboutScreen from '../screens/AboutScreen';
 
 const config = Platform.select({
   web: { headerMode: 'screen' },
@@ -31,42 +31,42 @@ HomeStack.navigationOptions = {
 
 HomeStack.path = '';
 
-const LinksStack = createStackNavigator(
+const DataStack = createStackNavigator(
   {
-    Links: LinksScreen,
+    Data: DataScreen,
   },
   config
 );
 
-LinksStack.navigationOptions = {
+DataStack.navigationOptions = {
   tabBarLabel: 'Data',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-paper' : 'md-paper'} />
   ),
 };
 
-LinksStack.path = '';
+DataStack.path = '';
 
-const SettingsStack = createStackNavigator(
+const AboutStack = createStackNavigator(
   {
-    Settings: SettingsScreen,
+    About: AboutScreen,
   },
   config
 );
 
-SettingsStack.navigationOptions = {
+AboutStack.navigationOptions = {
   tabBarLabel: 'About',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-information-circle' : 'md-information-circle'} />
   ),
 };
 
-SettingsStack.path = '';
+AboutStack.path = '';
 
 const tabNavigator = createBottomTabNavigator({
   HomeStack,
-  LinksStack,
-  SettingsStack,
+  DataStack,
+  AboutStack,
 });
 
 tabNavigator.path = '';

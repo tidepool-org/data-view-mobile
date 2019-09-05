@@ -34,10 +34,10 @@ export default class HomeScreen extends React.Component {
         <Button
           success
           block
-          onPress={() => this.props.navigation.navigate("LinksStack")}
+          onPress={() => this.props.navigation.navigate("DataStack")}
           style={[styles.button]}
         >
-          <Text>Links</Text>
+          <Text>Data</Text>
         </Button>
       </Content>
     </Container>
