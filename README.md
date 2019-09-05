@@ -45,9 +45,10 @@ We are so excited to be participating in the Grace Hopper Celebration Open Sourc
 
 **React Native Setup.** In preparation to contribute to this project you will need to have the react native development environment setup on your computer. We recommend using the setup documentation on the react-native site found [here](https://facebook.github.io/react-native/docs/getting-started). We will be using Expo tools, so make sure that you can create and run a react native application following the Expo CLI Quickstart instructions all the way through to seeing the app on either an iOS or Android device. 
 
-If you feel comfortable going through the setup for iOS simulator on Mac OS, we highly recommend it, as it is a faster workflow compared to refreshing a physical device. This is not required, just a nice to have.
+If you feel comfortable setting up a local (on computer) iOS simulator, we highly recommend it, as it is a faster workflow compared to refreshing a physical device. This is not required, just a nice to have. You can find the documentation for adding an iOS simulator [here](https://docs.expo.io/versions/latest/workflow/ios-simulator/). WARNING: Xcode takes a long time to download, plan to complete this when you have a solid internet connection and 30-45 minutes to allow the download to complete.
 
-For local (on computer) simulators we highly recommend using the iOS simulator unless you are not using a Mac, in our experience the Android simulator tends to run into more configuration errors and we will not have time to troubleshoot environment errors for individual participants.
+While both Android and iOS local (on computer) simulators are available, we highly recommend using the iOS simulator unless you are not using a Mac. In our experience the Android simulator tends to run into more configuration errors and we will not have time to troubleshoot environment errors for individual participants.
+
 
 **Project Setup.** Fork and clone this repo and get it running on your local machine using the directions below.
 
