@@ -28,21 +28,7 @@ export default class DataScreen extends React.Component {
         </Header>
 
         <Content padder>
-          <Button
-            block
-            onPress={tidepoolLearnMorePress}
-            style={[styles.button]}
-          >
-            <Text>Learn More About Tidepool</Text>
-          </Button>
-          <Button
-            success
-            block
-            onPress={() => this.props.navigation.navigate("HomeStack")}
-            style={[styles.button]}
-          >
-            <Text>Home</Text>
-          </Button>
+          <Text>Data from Jason</Text>
         </Content>
       </Container>
     );

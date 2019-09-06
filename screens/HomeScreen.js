@@ -14,6 +14,10 @@ import {
   Button,
 } from "native-base";
 
+import { MonoText } from "../components/StyledText";
+
+import { TextTitle } from "../components/TextTitle";
+
 export default class HomeScreen extends React.Component {
 
   render() {
@@ -26,19 +30,24 @@ export default class HomeScreen extends React.Component {
         </Body>
         <Right />
       </Header>
+      <Content>
+        <View style={[styles.elementContainer]}>
+          <TextTitle title="Tidepool X Grace Hopper OSD" />
+        </View>
 
-      <Content padder>
-        <Button block onPress={showAlert} style={[styles.button]}>
-          <Text>Alert</Text>
-        </Button>
-        <Button
-          success
-          block
-          onPress={() => this.props.navigation.navigate("DataStack")}
-          style={[styles.button]}
-        >
-          <Text>Data</Text>
-        </Button>
+        <View style={[styles.elementContainer]}>
+          <View style={styles.getStartedContainer}>
+            <Text style={styles.getStartedText}>Get started by opening</Text>
+
+            <View style={[styles.codeHighlightContainer, styles.homeScreenFilename]}>
+              <MonoText>screens/HomeScreen.js</MonoText>
+            </View>
+
+            <Text style={styles.getStartedText}>
+              Change this text and your app will automatically reload.
+            </Text>
+          </View>
+        </View>
       </Content>
     </Container>
   );
@@ -54,7 +63,35 @@ HomeScreen.navigationOptions = {
   };
 
 const styles = StyleSheet.create({
+  elementContainer: {
+    flex: 1,
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 20,
+  },
   button: {
     marginTop: 10,
+  },
+  getStartedContainer: {
+    alignItems: "center",
+    marginHorizontal: 50,
+  },
+  homeScreenFilename: {
+    marginVertical: 7,
+  },
+  codeHighlightText: {
+    color: "rgba(96,100,109, 0.8)",
+  },
+  codeHighlightContainer: {
+    backgroundColor: "rgba(0,0,0,0.05)",
+    borderRadius: 3,
+    paddingHorizontal: 4,
+  },
+  getStartedText: {
+    fontSize: 17,
+    color: "rgba(96,100,109, 1)",
+    lineHeight: 24,
+    textAlign: "center",
   },
 });
