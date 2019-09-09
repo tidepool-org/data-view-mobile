@@ -73,3 +73,10 @@ For troubleshooting with Expo, see the documentation [here](https://docs.expo.io
 You can contribute to this repo by submitting PRs, reporting bugs, or submitting feature requests.
 
 Find the specific documentation for contributing [here](https://github.com/tidepool-org/data-view-mobile/blob/master/CONTRIBUTING.md)
+
+
+## Other Documentation that will be helpful when contributing to this project
+
+- [react native](https://facebook.github.io/react-native/)
+- [native-base](https://docs.nativebase.io)
+- 

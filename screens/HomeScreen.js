@@ -57,7 +57,6 @@ HomeScreen.navigationOptions = {
   header: null,
 };
 
-
   function showAlert() {
     Alert.alert("Alert!");
   };

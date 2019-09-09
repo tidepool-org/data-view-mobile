@@ -1,6 +1,6 @@
 import * as WebBrowser from "expo-web-browser";
 import React from 'react';
-import { SafeAreaView, StyleSheet, View, Alert } from "react-native";
+import { SafeAreaView, StyleSheet, View } from "react-native";
 
 import {
   StyleProvider,
@@ -68,13 +68,9 @@ AboutScreen.navigationOptions = {
   header: null,
 };
 
-  function showAlert() {
-    Alert.alert("Alert!");
-  }
-
   function learnMoreAboutTidepoolPress() {
     WebBrowser.openBrowserAsync(
-      "https://www.tidepool.org"
+      "https://www.google.com"
     );
   }
 

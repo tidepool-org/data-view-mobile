@@ -19,14 +19,6 @@ export default class DataScreen extends React.Component {
   render() {
     return (
       <Container>
-        <Header>
-          <Left />
-          <Body>
-            <Title>Data</Title>
-          </Body>
-          <Right />
-        </Header>
-
         <Content padder>
           <Text>Data from Jason</Text>
         </Content>
