@@ -77,6 +77,7 @@ Find the specific documentation for contributing [here](https://github.com/tidep
 
 ## Other Documentation that will be helpful when contributing to this project
 
-- [react native](https://facebook.github.io/react-native/)
-- [native-base](https://docs.nativebase.io)
-- 
+- [React Native](https://facebook.github.io/react-native/)
+- [Expo](https://docs.expo.io/versions/latest/)
+- [Native Base](https://docs.nativebase.io)
+- [React Navigation](https://reactnavigation.org)
