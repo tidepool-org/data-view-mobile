@@ -1,6 +1,13 @@
 import * as WebBrowser from "expo-web-browser";
-import React from 'react';
-import { StyleSheet, View, Alert } from 'react-native';
+import React from "react";
+import {
+  StyleSheet,
+  View,
+  Alert,
+  FlatList,
+  ActivityIndicator,
+} from "react-native";
+import data from "../data.json";
 
 import {
   Container,
@@ -15,16 +22,55 @@ import {
 } from "native-base";
 
 export default class DataScreen extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      isLoading: true,
+      dataSource: [],
+    };
+  }
+
+  componentDidMount() {
+    return fetch("https://potterverse.herokuapp.com/data/characters_basic")
+      .then(response => response.json())
+      .then(responseJson => {
+        // set state value
+        this.setState({
+          isLoading: false, // already loading
+          dataSource: responseJson.charactersBasic,
+        });
+      })
+      .catch(error => {
+        console.log("error");
+      });
+  }
 
   render() {
+    if (this.state.isLoading) {
+      return (
+        <View style={{ flex: 1, padding: 20 }}>
+          <ActivityIndicator />
+        </View>
+      );
+    }
+
     return (
       <Container>
         <Content padder>
-          <Text>Data from Jason</Text>
+          <FlatList
+            style={{ paddingTop: 50 }}
+            data={this.state.dataSource}
+            renderItem={({ item }) => (
+              <Text style={styles.item}>
+                {item.name}, {item.id}, {item.house}{" "}
+              </Text>
+            )}
+            keyExtractor={(item, index) => index.toString()}
+          />
         </Content>
       </Container>
     );
-    
   }
 }
 
@@ -33,13 +79,16 @@ DataScreen.navigationOptions = {
 };
 
 function tidepoolLearnMorePress() {
-  WebBrowser.openBrowserAsync(
-    'https://tidepool.org/'
-  );
+  WebBrowser.openBrowserAsync("https://tidepool.org/");
 }
 
 const styles = StyleSheet.create({
   button: {
     marginTop: 10,
+  },
+  item: {
+    padding: 10,
+    fontSize: 18,
+    height: 44,
   },
 });
