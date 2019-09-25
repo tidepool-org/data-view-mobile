@@ -7,7 +7,7 @@ import {
   FlatList,
   ActivityIndicator,
 } from "react-native";
-import data from "../data.json";
+import data from "../data/data.json";
 
 import {
   Container,
