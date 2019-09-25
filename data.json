@@ -2,7 +2,7 @@
     "charactersBasic": [
         {
             "id": 1,
-            "name": "Harry Potter",
+            "name": "Harry",
             "school": "Hogwarts",
             "house": "Gryffindor",
             "role": "Hogwarts Student",

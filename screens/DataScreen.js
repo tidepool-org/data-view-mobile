@@ -29,21 +29,31 @@ export default class DataScreen extends React.Component {
       isLoading: true,
       dataSource: [],
     };
+
+    this.useLocalData = true;
   }
 
   componentDidMount() {
-    return fetch("https://potterverse.herokuapp.com/data/characters_basic")
-      .then(response => response.json())
-      .then(responseJson => {
-        // set state value
-        this.setState({
-          isLoading: false, // already loading
-          dataSource: responseJson.charactersBasic,
-        });
-      })
-      .catch(error => {
-        console.log("error");
+    if (this.useLocalData) {
+      this.setState({
+        isLoading: false,
+        dataSource: data.charactersBasic,
       });
+    } else {
+      return fetch("https://potterverse.herokuapp.com/data/characters_basic")
+        .then(response => {
+          return response.json();
+        })
+        .then(responseJson => {
+          this.setState({
+            isLoading: false,
+            dataSource: responseJson.charactersBasic,
+          });
+        })
+        .catch(error => {
+          console.log("error");
+        });
+    }
   }
 
   render() {
