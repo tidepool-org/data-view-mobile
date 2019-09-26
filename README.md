@@ -1,4 +1,4 @@
-# Tidepool RN Data View -- IN PROGRESS
+# Tidepool RN Data View
 
 This is the repo for the Tidepool Data View React Native application for the Grace Hopper Celebration Open Source Day.
 

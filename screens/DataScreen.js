@@ -7,7 +7,7 @@ import {
   FlatList,
   ActivityIndicator,
 } from "react-native";
-import data from "../data/data.json";
+import data from "../data/tidepool-data.json";
 
 import {
   Container,
@@ -20,6 +20,8 @@ import {
   Text,
   Button,
 } from "native-base";
+
+import { TextTitle } from "../components/TextTitle";
 
 export default class DataScreen extends React.Component {
   constructor(props) {
@@ -37,17 +39,19 @@ export default class DataScreen extends React.Component {
     if (this.useLocalData) {
       this.setState({
         isLoading: false,
-        dataSource: data.charactersBasic,
+        dataSource: data,
       });
     } else {
       return fetch("https://potterverse.herokuapp.com/data/characters_basic")
+      //if you wanted to fetch data from an API rather than using local data
+
         .then(response => {
           return response.json();
         })
         .then(responseJson => {
           this.setState({
             isLoading: false,
-            dataSource: responseJson.charactersBasic,
+            dataSource: responseJson,
           });
         })
         .catch(error => {
@@ -68,12 +72,14 @@ export default class DataScreen extends React.Component {
     return (
       <Container>
         <Content padder>
+          <TextTitle title="Imported from tidepool-data" />
+
           <FlatList
-            style={{ paddingTop: 50 }}
+            style={{ paddingTop: 20 }}
             data={this.state.dataSource}
             renderItem={({ item }) => (
               <Text style={styles.item}>
-                {item.name}, {item.id}, {item.house}{" "}
+                {item.id} {" "}
               </Text>
             )}
             keyExtractor={(item, index) => index.toString()}
