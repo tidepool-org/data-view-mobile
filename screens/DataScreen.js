@@ -43,7 +43,7 @@ export default class DataScreen extends React.Component {
       });
     } else {
       return fetch("https://potterverse.herokuapp.com/data/characters_basic")
-      //if you wanted to fetch data from an API rather than using local data
+      // if you wanted to fetch data from an API rather than using local data
 
         .then(response => {
           return response.json();
