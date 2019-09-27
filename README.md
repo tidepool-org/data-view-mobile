@@ -29,13 +29,19 @@ Helpful Skills: Git, Node/NPM, Javascript
 Bonus Skills: React, React-Native, Product Development, UI/UX
 
 
+## Project Background
+
+The react native app we will be working on is meant to compliment the existing Tidepool web app which visually displays all different types of data in one place for each person with diabetes. To get a idea of the current product (and to think about where you may want to go with this project) check out what our web app looks like use Google Chrome to go to [https://app.tidepool.org](https://app.tidepool.org) and then log in with these credentials:
+- username: demo+grace@tidepool.org
+- password: grace123
+
+
 ## Expectations for GHC OSD
 
 We are so excited to be participating in the Grace Hopper Celebration Open Source Day! We want everyone to get the most out of their participation -- to be setup for success we ask that each participant come prepared having completed the following steps: 
 
 - Carefully review this README.md and [CONTRIBUTING.md](https://github.com/tidepool-org/data-view-mobile/blob/master/CONTRIBUTING.md)
 - Complete Dev Environment Setup (as outlined below)
-- [PRODUCT TASKS]
 
 
 ## Setup
