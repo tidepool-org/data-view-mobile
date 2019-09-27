@@ -1,0 +1,42 @@
+﻿COLUMN,DESCRIPTION,TYPE,EXAMPLES
+activeSchedule,"The active schedule id set associated with pumpSettings in the fields: bolus, basalSchedules, insulinSensitivities, carbRatios, and bgTargets",STRING,a553a79b
+bgInput,Blood glucose (mmol/L) input to pump calculator,FLOAT,"0, 4.718135792, 22.48052936"
+bolus,A dictionary of schedule names and their bolus calculator settings,DICT,"{'a553a79b': {'amountMaximum': {'units': 'Units', 'value': 15}, 'calculator': {'enabled': True, 'insulin': {'duration': 240, 'units': 'minutes'}}}, '862691a2': {'amountMaximum': {'units': 'Units', 'value': 15}, 'calculator': {'enabled': True, 'insulin': {'duration': 240, 'units': 'minutes'}}}}"
+calculatorId,A unique identifier for every bolus calculator event,STRING,00c2i5q497sfmea17ko1o4okba5u9ijl
+carbInput,Carbohydrates (grams) input to pump calculator,INT,"0, 32, 56, 93"
+deliveryType,The type of basal event,STRING,"scheduled, temp, suspend"
+deviceId,A unique identifier for each pump and glucose monitoring device,STRING,3fd511c4
+deviceManufacturers,A unique identifier for each manufacturer of pump and glucose monitoring device,STRING,2dfaaf91
+deviceModel,A unique identifier for each model of pump and glucose monitoring device,STRING,a3b67c08
+deviceSerialNumber,A unique identifier for each serial number of pump and glucose monitoring device,STRING,48458d6f
+deviceTags,A list of data device type tags associated with each event,LIST,"['bgm'], ['cgm'], ['insulin-pump', 'cgm']"
+deviceTime,Device time in YYYY-MM-DDThh:mm:ss format,STRING,2017-04-21T20:59:40
+duration,"The actual duration (milliseconds) of a suspend, basal, or dual/square bolus",INT,"0, 230000, 7112000"
+expectedDuration,"The expected duration (milliseconds) of a suspend, basal, or dual/square bolus",INT,"3600000, 7200000"
+expectedExtended,The expected delivered amount of extended dual/square bolus insulin,FLOAT,"2.125, 5, 4.696"
+expectedNormal,The expected delivered amount of normal bolus insulin,FLOAT,"1.5, 2.6, 5.71"
+extended,The actual delivered amount of extended dual/square bolus insulin,FLOAT,"0.125, 3.15"
+id,A unique identifier for each data entry,STRING,e89ckcl5g73jbuo6p923a6be8m7ralsv0c4ecbf
+insulinCarbRatio,The insulin-to-carb ratio (1 unit:grams) used during pump calculations,FLOAT,"7, 9.5"
+insulinOnBoard,"The insulin ""on board"" in the body used during pump calculations",FLOAT,"0, 3.14"
+normal,The actual delivered amount of normal bolus insulin,FLOAT,"0, 3.38458"
+percent,The temp basal rate's decimal percentage of the scheduled basal rate,FLOAT,"0.15, 2.5"
+primeTarget,The target of the primed insulin,STRING,"cannula, tubing"
+rate,The set basal rate,FLOAT,"0.2, 1.875"
+scheduleName,The set basal schedule name,STRING,a553a79b
+status,The status of the device set during a deviceEvent,STRING,"resumed, suspended"
+subType,A subtype of data different pump/cgm/bgm events,STRING,"timeChange, reservoirChange, dual/square, calibration"
+time,UTC timestamp in the format YYYY-MM-DDThh:mm:ss.sssZ,STRING,2017-05-24T14:15:06.000Z
+timeProcessing,Time processing information calculated during upload,STRING,"none, utc-bootstrapping, across-the-board-timezone"
+timezone,The timezone in which data was uploaded,STRING,STRING
+transmitterId,A unique identifier for each CGM transmitter,STRING,e584e1f5
+type,The type of data entry ,STRING,"smbg, cbg, bolus, basal, upload"
+units,The units used for an associated data type,STRING / DICT,"mmol/L, {'bg': 'mg/dL', 'carb': 'grams'}"
+uploadId,A unique identifier for each upload event to Tidepool,STRING,"f74be3251fc3c25ac3a598bb8eff9cf9, upid_b58613b43ce5"
+value,"The blood glucose value (mmol/L) from cgm, calibrations, and smbg data",FLOAT,"2.2203, 20.8153"
+version,Tidepool uploader verison,STRING,"2.5.11, org.tidepool.blipnotes:2.0.3-501"
+basalSchedules,"A dictionary of schedule names, their basal rates, and start times (milliseconds since midnight)",DICT,"{'a553a79b': [{'rate': 0.7, 'start': 0}, {'rate': 0.9, 'start': 19800000}, {'rate': 0.8, 'start': 25200000}, {'rate': 0.9, 'start': 39600000}, {'rate': 0.8, 'start': 50400000}, {'rate': 0.75, 'start': 79200000}]}"
+bgTargets,"A dictionary of schedule names, their blood glucose target ranges (mmol/L), , and start times (milliseconds since midnight)",DICT,"{'a553a79b': [{'start': 0, 'target': 6.66089758925464}, {'start': 19800000, 'target': 6.66089758925464}, {'start': 25200000, 'target': 6.66089758925464}, {'start': 39600000, 'target': 6.66089758925464}, {'start': 50400000, 'target': 6.66089758925464}, {'start': 79200000, 'target': 6.66089758925464}]}"
+carbRatios,"A dictionary of schedule names, their insulin to carb ratios (1 unit:grams), and start times (milliseconds since midnight)",DICT,"{'a553a79b': [{'amount': 10, 'start': 0}, {'amount': 9, 'start': 19800000}, {'amount': 10, 'start': 25200000}, {'amount': 7.5, 'start': 39600000}, {'amount': 9, 'start': 50400000}, {'amount': 10, 'start': 79200000}]}"
+insulinSensitivities,"A dictionary of schedule names, their insulin sensitivities (1 unit:mmol/L), and start times (milliseconds since midnight)",DICT,"{'a553a79b': [{'amount': 3.0529113950750433, 'start': 0}, {'amount': 2.7753739955227665, 'start': 19800000}, {'amount': 2.7753739955227665, 'start': 25200000}, {'amount': 2.7753739955227665, 'start': 39600000}, {'amount': 3.0529113950750433, 'start': 50400000}, {'amount': 3.6079861941795968, 'start': 79200000}]}"
+insulinSensitivity,The insulin sensitivity (1 unit:mmol/L) used during pump calculations,FLOAT,2.775373996
