@@ -71,6 +71,13 @@ export default class DataScreen extends React.Component {
 
     return (
       <Container>
+        <Header>
+          <Left />
+          <Body>
+            <Title>Data</Title>
+          </Body>
+          <Right />
+        </Header>
         <Content padder>
           <TextTitle title="Imported from tidepool-data" />
 
